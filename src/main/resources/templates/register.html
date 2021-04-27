@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<title>注册页面k</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main">
+	<form action="/register11" class="form">
+		<div class="form-head">
+			<h2>新用户注册</h2>
+			<p>已有账号？<a href="login.html">立即登录</a></p>
+		</div>
+		<div class="form-body">
+			<div class="ui-input">
+				<input type="text" placeholder="账号" name ="username">
+			</div>
+			<div class="ui-input">
+				<input type="password" name ="password" placeholder="密码，6-16位，区分大小写">
+			</div>
+			<button type="submit">登录</button>
+		</div>
+	</form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
