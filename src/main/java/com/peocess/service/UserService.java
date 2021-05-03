@@ -1,4 +1,4 @@
-package com.peocess.Service.userservice;
+package com.peocess.service;
 
 import com.peocess.demo.UserEntity;
 

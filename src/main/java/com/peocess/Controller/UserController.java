@@ -1,10 +1,11 @@
 package com.peocess.Controller;
-import com.peocess.Service.userservice.UserService;
+import com.peocess.service.UserService;
 import com.peocess.dao.UserRepository;
 import com.peocess.demo.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
@@ -44,7 +45,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value = "/register11")
+    @PostMapping(value = "/register11")
     @ResponseBody
     public String register(HttpServletRequest request) {
         String username = request.getParameter("username");

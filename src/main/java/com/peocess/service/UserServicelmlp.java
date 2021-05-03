@@ -1,4 +1,4 @@
-package com.peocess.Service.userservice;
+package com.peocess.service;
 import com.peocess.dao.UserRepository;
 import com.peocess.demo.UserEntity;
 import org.springframework.stereotype.Service;
@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServicelmlp implements UserService {
-
 
     private final UserRepository userRepository;
 
@@ -18,8 +17,4 @@ public class UserServicelmlp implements UserService {
     public UserEntity findUserByUsernameAndPassowrd(String username, String password) {
         return userRepository.findUserByUsernameAndPassword(username, password);
     }
-
-
-
-
 }
